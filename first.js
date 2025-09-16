@@ -11,11 +11,6 @@ require('dotenv').config();
 const MONGO_URL = process.env.MONGO_URL;
 const JWT_SECRET = process.env.JWT_SECRET;
 
-// --- SECRETS HARDCODED FOR TESTING ---
-// const MONGO_URL = "mongodb+srv://anubhavs:anubhav7795@cluster0.ay54bjl.mongodb.net/user_app?retryWrites=true&w=majority&appName=Cluster0";
-// const JWT_SECRET = "password739q7343";
-// ------------------------------------
-
 mongoose.connect(MONGO_URL);
 
 const User = mongoose.model('Users', {
